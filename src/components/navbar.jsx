@@ -7,8 +7,8 @@ const Navbar = ({ title, menuList }) => {
     return (
         <nav className="navbar">
             <div className="nav-left">
-                <div className="logo-nav">Your logo</div>
-                {window.innerWidth>=768 && title && (
+                <div className="logo-nav" onClick={()=>navigate('/')}>Your logo</div>
+                {window.innerWidth >= 768 && title && (
                     <>
                         <div className="topic-nav">Cyber Safety</div>
                         <div className="title-nav">{title}</div>
@@ -17,8 +17,8 @@ const Navbar = ({ title, menuList }) => {
             </div>
 
             <div className="nav-right">
-                { window.innerWidth<768 ? (
-                    <div>
+                { title ? (
+                    <div onClick={()=>navigate("/menu")}>
                         <div className="hamburger-menu">
                             <div></div>
                             <div></div>

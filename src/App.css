@@ -26,6 +26,7 @@
 .topic-nav,
 .title-nav {
   font-weight: 500;
+  cursor:pointer;
 }
 
 .topic-nav,
@@ -100,9 +101,10 @@
 }
 
 @media (max-width: 768px) {
-  .main{
+  .main {
     margin-left: 1rem;
   }
+
   .navbar {
     align-items: flex-start;
     gap: 1rem;
@@ -224,9 +226,11 @@
   .btn-menu {
     width: 90%;
     height: 13%;
+    line-height: 3rem;
   }
 
   .forward-btn-menu {
+    margin-top: 0.6rem;
     width: 1.2rem;
     height: 2rem;
     line-height: 1.7rem;
@@ -294,6 +298,11 @@ input:active {
     width: 93%;
     background-image: url('/assets/menu-panel-mobile.svg');
     background-position: bottom;
+    background-size: contain;
+  }
+  .mid-main {
+    margin-top: 5rem;
+    gap: 2rem;
   }
 }
 
@@ -420,52 +429,14 @@ h3>img {
     height: 70%;
     width: 80%;
     margin: 2rem 0.5rem;
-    background-color: white;
-    opacity: 0.9;
-    border-radius: 1rem;
-    color: black;
-    display: flex;
     flex-direction: column;
-    align-items: baseline;
   }
 
   .policy-content {
-    height: 100%;
-    width: 100%;
     padding: 1rem 0;
   }
 
   .policy-img {
-    height: 100%;
-    width: 100%;
     padding: 3rem 0;
-    background-image: url('/assets/policy-dummy.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-  }
-
-  .policy-data {
-    font-weight: 500;
-    font-size: 2rem;
-    width: 10rem;
-    text-align: center;
-  }
-
-  .magnify-logo {
-    height: 2rem;
-    width: 2rem;
-    cursor: pointer;
-    background-image: url('/public/assets/zoom_in.svg');
-  }
-
-  h3>img {
-    position: relative;
-    top: 7rem;
-    left: 4rem;
   }
 }
