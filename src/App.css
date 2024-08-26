@@ -460,7 +460,7 @@ h3>img {
     height: 2rem;
     width: 2rem;
     cursor: pointer;
-    background-image: url('/assets/zoom_in.svg');
+    background-image: url('/public/assets/zoom_in.svg');
   }
 
   h3>img {
