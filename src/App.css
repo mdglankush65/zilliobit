@@ -99,6 +99,30 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .main{
+    margin-left: 1rem;
+  }
+  .navbar {
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .menu-logo,
+  .mute-logo,
+  .exit-logo {
+    height: 2.7rem;
+    width: 2.7rem;
+  }
+
+  .head-title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+  }
+}
 
 /* Menu Component */
 
@@ -112,13 +136,13 @@
 
 .hd-menu {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.7rem;
   border-bottom: 1px solid aqua;
   padding: 0px 20px;
 }
 
 .line-menu {
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 .mobile-menu {
@@ -158,6 +182,55 @@
   font-weight: 700;
   border: 2px solid black;
   border-radius: 50%;
+}
+
+.hamburger-menu {
+  padding: .5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .hd-menu {
+    font-weight: 700;
+    font-size: 2.5rem;
+    border-bottom: 1px solid aqua;
+    padding: 0px 20px;
+  }
+
+  .mobile-menu {
+    height: 50%;
+    width: 95%;
+    margin-left: 0.7rem;
+    background-image: url('/assets/panel-1-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .btn-menu {
+    width: 90%;
+    height: 13%;
+  }
+
+  .forward-btn-menu {
+    width: 1.2rem;
+    height: 2rem;
+    line-height: 1.7rem;
+  }
 }
 
 /* Introduction Component */
@@ -215,6 +288,15 @@ input:active {
   background-color: rgb(66, 192, 192);
 }
 
+@media(max-width : 768px) {
+  .main-intro {
+    margin: 1rem;
+    width: 93%;
+    background-image: url('/assets/menu-panel-mobile.svg');
+    background-position: bottom;
+  }
+}
+
 /* Footer */
 
 .foot {
@@ -269,7 +351,7 @@ input:active {
 
 .video-js {
   height: 70%;
-  width:100%;
+  width: 100%;
   margin: 0;
 }
 
@@ -324,11 +406,66 @@ input:active {
   height: 2rem;
   width: 2rem;
   cursor: pointer;
-  background-image: url('/public/assets/zoom_in.svg');
+  background-image: url('/assets/zoom_in.svg');
 }
 
-h3 > img {
+h3>img {
   position: relative;
-  top:7rem;
+  top: 7rem;
   left: 4rem;
+}
+
+@media(max-width:768px) {
+  .main-policy {
+    height: 70%;
+    width: 80%;
+    margin: 2rem 0.5rem;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 1rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .policy-content {
+    height: 100%;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .policy-img {
+    height: 100%;
+    width: 100%;
+    padding: 3rem 0;
+    background-image: url('/assets/policy-dummy.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+
+  .policy-data {
+    font-weight: 500;
+    font-size: 2rem;
+    width: 10rem;
+    text-align: center;
+  }
+
+  .magnify-logo {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    background-image: url('/assets/zoom_in.svg');
+  }
+
+  h3>img {
+    position: relative;
+    top: 7rem;
+    left: 4rem;
+  }
 }
